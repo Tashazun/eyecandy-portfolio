@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './Projects.scss';
 
 class Projects extends Component {
     render() {
         return (
-            <div>
-                
+            <div id='projects-container'>
+                <h2>Projects</h2>
             </div>
         );
     }
