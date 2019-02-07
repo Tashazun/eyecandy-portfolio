@@ -18,6 +18,11 @@ class App extends Component {
           <Projects />
           <Contact />
         </section>
+        <footer className="App-footer">
+          <p>
+            Footer
+          </p>
+        </footer>
       </div>
     );
   }
