@@ -17,7 +17,12 @@
 
 .App-footer {
   background-color: #282c34;
-  min-height: 10vh;
-  margin: 0;
+  display: flex;
 }
 
+#image1, #image2, #image3 {
+  background: url('../../assets/fractal.svg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}

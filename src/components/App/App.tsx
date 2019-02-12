@@ -20,7 +20,7 @@ class App extends Component {
             </p>
           </div>
           <About />
-          <div id="iamge2">
+          <div id="image2">
             <p>
               Projects
             </p>
