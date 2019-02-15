@@ -15,19 +15,19 @@ class App extends Component {
         </header>
         <section>
           <div id="image1">
-            <p>
+            <p className='page-title'>
               About
             </p>
           </div>
           <About />
           <div id="image2">
-            <p>
+            <p className='page-title'>
               Projects
             </p>
           </div>
           <Projects />
           <div id="image3">
-            <p>
+            <p className='page-title'>
               Contact
             </p>
           </div>

@@ -1,6 +1,8 @@
+@import '../../main.scss';
+
 .App {
   text-align: center;
-  height: 400vh;
+  height: 500vh;
 }
 
 
@@ -18,23 +20,29 @@
 
 .App-footer {
   background-color: #282c34;
+  height: 25vh;
   display: flex;
 }
 
 #image1, #image2, #image3 {
-  background: url('../../assets/fractal.svg') no-repeat center center;
-  background-size: 1000px 1000px;
+  background: $image-one center center;
+  background-color: #292929;
   background-attachment: fixed;
-  overflow: hidden;
-  position: relative;
   display: flex;
-  z-index: -1;
-  animation: scroll 10s linear infinite;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  animation: scroll 25s linear infinite;
 }
 
 @keyframes scroll {
 
   100% {
-    background-position: 0px -100px;
+    background-position: bottom;
   }
+}
+
+.page-title {
+  font-size: 4em;
+  color: white;
 }
