@@ -4,15 +4,17 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 
+import picture from '../../assets/beach-pic.jpg';
 class App extends Component {
   render() {
     return (
       <div className="App-container">
-        <header className="App-header">
+        <section className="App-landing-page">
+          <img src={picture} alt='Photo of Tasha Zuniga gazing out to sea' />
           <p>
-            Personal Website
+            Tasha Zuniga
           </p>
-        </header>
+        </section>
         <section>
           <div id="image1">
             <p className='page-title'>
