@@ -11,15 +11,16 @@ class App extends Component {
       <div className="App-container">
         <section className="App-landing-page">
           <article id='bottom-shutter'>
-            <h4 className='inner-text'>Cinephile +</h4>
-            <h4 className='inner-text'>Artist +</h4> 
+            <h4 className='inner-text block-1'>Artist +</h4> 
             <h4 className='inner-text'>Cakes +</h4>
             <h4 className='inner-text'>+ Great Ideas</h4>
+            <h4 className='inner-text'>+ Oregonian</h4>
             <div id='top-shutter'>
               <h4 className='outer-text'><p>Tasha Zuniga.</p></h4>
               <h4 className='outer-text'><p>Full-Stack</p></h4>
               <h4 className='outer-text'><p>Javascript</p></h4>
               <h4 className='outer-text'><p>Developer</p></h4>
+              <h4 className='outer-text filler-block'></h4>
             </div>
           </article>
         </section>
