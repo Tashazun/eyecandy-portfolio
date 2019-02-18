@@ -11,9 +11,10 @@ class App extends Component {
       <div className="App-container">
         <section className="App-landing-page">
           <img src={picture} alt='Photo of Tasha Zuniga gazing out to sea' />
-          <p>
-            Tasha Zuniga
-          </p>
+          <article>
+            <h3>Tasha Zuniga</h3>
+            <h4>Full-Stack Javascript Developer</h4>
+          </article>
         </section>
         <section>
           <div id="image1">
