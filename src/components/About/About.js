@@ -13,7 +13,7 @@ class About extends Component {
                         These days I’m a Full-Stack Javascript developer with primary leaning towards the Front-End. I most often use the MERN stack, but I’m always looking for new and interesting ways to make cool projects. Sass is my jam right now, and making slick responsive layouts just fills me with glee.
                         Outside of all that you can find me chilling with dog, Journey, either in the woods or playing an RPG.
                     </p>
-                    <img src={Selfie} alt='Photo of Tasha Zuniga looking whistful' />
+                    <img src={Selfie} alt='Tasha Zuniga looking whistful' />
                 </div>
             </div>
         );
