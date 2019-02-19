@@ -12,23 +12,11 @@ class App extends Component {
       <div className="App-container">
         <Landing />
         <section>
-          <div id="image1">
-            <p className='page-title'>
-              About
-            </p>
-          </div>
+          <div id="image1"></div>
           <About />
-          <div id="image2">
-            <p className='page-title'>
-              Projects
-            </p>
-          </div>
+          <div id="image2"></div>
           <Projects />
-          <div id="image3">
-            <p className='page-title'>
-              Contact
-            </p>
-          </div>
+          <div id="image3"></div>
           <Contact />
         </section>
         <footer className="App-footer">

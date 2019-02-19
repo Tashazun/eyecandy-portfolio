@@ -22,29 +22,19 @@
 #image1 {
   @extend %background-scroll;
   background: $image-one center center;
-  background-color: #292929;
   background-attachment: fixed;
 }
 
 #image2 {
   @extend %background-scroll;
   background: $image-two center center;
-  background-color: #292929;
   background-attachment: fixed;
 }
 
 #image3 {
   @extend %background-scroll;
   background: $image-three center center;
-  background-color: #292929;
   background-attachment: fixed;
-}
-
-
-.page-title {
-  font-size: 4em;
-  color: white;
-  font-family: 'Fugaz One', cursive;
 }
 
 .App-footer {
