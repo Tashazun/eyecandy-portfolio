@@ -7,7 +7,9 @@ class About extends Component {
         return (
             <div id='about-container'>
                 <img src={Selfie} alt='Tasha Zuniga looking whistful' />
-                <h2>She’s a child of the Portland streets. A coder | An illustrator | A gamer</h2>
+                <div id='about-banner'>
+                    <h2>She’s a child of the Portland streets. A coder | An illustrator | A gamer</h2>
+                </div>
                 <div id='about-info'>
                     <p>
                         First inspired by the 2001 classic, Antitrust, I attempted to get into the alluring world of code, but once my twelve year old self realized I wouldn’t be battling corporate conspiracy anytime soon, I lost a bit of steam. However, it was always in the corner of my mind from then on, throughout my forays into taxidermy and artistry I ended up back at the computer.
