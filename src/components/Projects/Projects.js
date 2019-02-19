@@ -7,9 +7,21 @@ class Projects extends Component {
             <div id='projects-container'>
                 <h2>Projects</h2>
                 <div id='projects-list'>
-                    <div className='project-block'>Project1</div>
-                    <div className='project-block'>Project2</div>
-                    <div className='project-block'>Project3</div>
+                    <div className='project-block'>
+                        Project1
+                        <p>Summary of project.</p>
+                        <button>View on Github</button>
+                    </div>
+                    <div className='project-block'>
+                        Project2
+                        <p>Summary of second project.</p>
+                        <button>View on Github</button>
+                    </div>
+                    <div className='project-block'>
+                        Project3
+                        <p>Summary of final project.</p>
+                        <button>View on Github</button>
+                    </div>
                 </div>
             </div>
         );
