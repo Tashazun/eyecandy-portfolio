@@ -1,7 +1,11 @@
 @import '../../main.scss';
 
 .App-container {
+  position: absolute;
+  overflow: hidden;
   height: 500vh;
+  display: flex;
+  flex-direction: column;
 }
 
 %background-scroll {
