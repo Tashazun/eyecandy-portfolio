@@ -1,0 +1,14 @@
+{
+    "plugins": ["prettier", "cypress", "react"],
+    "env": {
+      "cypress/globals": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "extends": [
+      "plugin:cypress/recommended",
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ]
+  }
