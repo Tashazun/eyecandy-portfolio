@@ -1,19 +1,19 @@
 #projects-container {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px #292929;
+
+  #projects-list {
     display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 10px #292929;
+    align-items: center;
+    justify-content: space-evenly;
 
-    #projects-list {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-
-        .project-block {
-            height: 10em;
-            width: 10em;
-            background: blue;
-        }
+    .project-block {
+      height: 10em;
+      width: 10em;
+      background: blue;
     }
+  }
 }
