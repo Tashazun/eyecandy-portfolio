@@ -6,7 +6,12 @@ import Vivus from "vivus";
 
 class Landing extends Component {
   componentDidMount() {
-    new Vivus("poppies", { type: "oneByOne", duration: 15000, file: Poppies });
+    new Vivus("poppies", {
+      type: "oneByOne",
+      start: "autostart",
+      duration: 45000,
+      file: Poppies
+    });
   }
 
   render() {

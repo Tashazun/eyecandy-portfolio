@@ -11,11 +11,11 @@ class App extends Component {
       <div className="App-container">
         <Landing />
         <section>
-          <div id="image1" />
+          {/* <div id="image1" /> */}
           <About />
-          <div id="image2" />
+          {/* <div id="image2" /> */}
           <Projects />
-          <div id="image3" />
+          {/* <div id="image3" /> */}
           <Contact />
         </section>
         <footer className="App-footer">

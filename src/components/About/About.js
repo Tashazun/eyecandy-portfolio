@@ -8,6 +8,7 @@ class About extends Component {
       <div id="about-container">
         <img src={Selfie} alt="Tasha Zuniga looking whistful" />
         <div id="about-banner">
+          <h2>Who is this wunderkind?</h2>
           <h2>
             She’s a child of the Portland streets. A coder | An illustrator | A
             gamer
