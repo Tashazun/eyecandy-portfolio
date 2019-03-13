@@ -19,7 +19,7 @@
 
     img {
       margin: 0;
-      width: 12em;
+      width: 10em;
       grid-area: 1/1/2/2;
     }
 
@@ -46,16 +46,20 @@
     grid-template-columns: 15% 15% 40% 15% 15%;
     grid-template-rows: repeat(3, 1fr);
 
+    #intro {
+      grid-area: 3/4/4/6;
+      place-self: center start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      font-family: "Dancing Script", cursive;
+    }
+
     #white {
       grid-area: 1/2/4/5;
       place-self: center stretch;
-    }
-
-    h3 {
-      grid-area: 3/4/4/5;
-      color: white;
-      font-size: 3.5em;
-      font-family: "Dancing Script", cursive;
     }
   }
 }
