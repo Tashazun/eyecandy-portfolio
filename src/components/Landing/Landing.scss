@@ -1,32 +1,61 @@
 .landing-page {
   background-color: #000000;
+  min-height: 100vh;
   max-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0;
-  font-size: 4em;
   overflow: hidden;
 
-  svg {
-    height: 25em;
-    width: 10em;
-  }
-
-  img {
-    height: 2.5em;
-    width: 2.5em;
-  }
-  #top {
+  #top-layer {
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    grid-template-rows: repeat(3, 1fr);
     background: white;
     clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+    img {
+      margin: 0;
+      width: 12em;
+      grid-area: 1/1/2/2;
+    }
+
+    h2 {
+      margin: 0;
+      margin-left: 5%;
+      grid-area: 2/1/2/4;
+      place-self: center;
+      font-size: 4em;
+      font-family: "Dancing Script", cursive;
+      place-self: start start;
+    }
+
+    #black {
+      grid-area: 1/2/4/5;
+      place-self: center stretch;
+    }
+  }
+
+  #bottom-layer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    #white {
+      grid-area: 1/2/4/5;
+      place-self: center stretch;
+    }
+
+    h3 {
+      grid-area: 3/4/4/5;
+      color: white;
+      font-size: 3.5em;
+      font-family: "Dancing Script", cursive;
+    }
   }
 }
