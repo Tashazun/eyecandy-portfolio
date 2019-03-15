@@ -10,14 +10,9 @@ class App extends Component {
     return (
       <div className="App-container">
         <Landing />
-        <section>
-          {/* <div id="image1" /> */}
-          <About />
-          {/* <div id="image2" /> */}
-          <Projects />
-          {/* <div id="image3" /> */}
-          <Contact />
-        </section>
+        <About />
+        <Projects />
+        <Contact />
         <footer className="App-footer">
           <p>Footer</p>
         </footer>
