@@ -5,23 +5,12 @@ class Projects extends Component {
   render() {
     return (
       <div id="projects-container">
-        <h2>Projects</h2>
-        <div id="projects-list">
-          <div className="project-block">
-            Project1
-            <p>Summary of project.</p>
-            <button>View on Github</button>
-          </div>
-          <div className="project-block">
-            Project2
-            <p>Summary of second project.</p>
-            <button>View on Github</button>
-          </div>
-          <div className="project-block">
-            Project3
-            <p>Summary of final project.</p>
-            <button>View on Github</button>
-          </div>
+        <h1>|| Some projects I have worked on.</h1>
+        <div id="project-block1">Project1</div>
+        <div id="project-block2">Project2</div>
+        <div id="project-block3">Project3</div>
+        <div id="works">
+          <h3>Works</h3>
         </div>
       </div>
     );

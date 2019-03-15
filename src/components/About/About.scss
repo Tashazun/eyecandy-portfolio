@@ -3,32 +3,38 @@
   width: 100%;
   display: flex;
   position: relative;
+  overflow: hidden;
 
   h2 {
-    margin: 5%;
+    margin: 0;
     font-family: "Montserrat", sans-serif;
   }
 
   img {
-    position: absolute;
-    top: 0;
-    left: 30%;
-    margin: 5%;
-    width: 15em;
-    height: 15em;
-    border: white 1em solid;
-    border-radius: 50%;
-  }
-
-  #about-banner {
-    background: #ff3651;
+    align-self: center;
+    height: 120vh;
   }
 
   #about-info {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin: 5%;
+    justify-content: center;
     font-family: "Monda", sans-serif;
+  }
+
+  #profile {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 5em;
+
+    h3 {
+      margin: 0;
+      margin-top: 0.5em;
+      font-size: 1.2em;
+      letter-spacing: 0.2em;
+      font-family: "Monda", sans-serif;
+      writing-mode: vertical-rl;
+    }
   }
 }
