@@ -3,11 +3,15 @@
   width: 100%;
   display: flex;
   position: relative;
-  overflow: hidden;
 
   h2 {
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+
+    span {
+      color: #a80016;
+    }
   }
 
   img {
@@ -16,6 +20,7 @@
   }
 
   #about-info {
+    margin-left: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;

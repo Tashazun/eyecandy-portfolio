@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import Contact from "../Contact/Contact";
+import Skills from "../Skills/Skills";
 import Landing from "../Landing/Landing";
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <Landing />
         <About />
         <Projects />
-        <Contact />
+        <Skills />
         <footer className="App-footer">
           <p>Footer</p>
         </footer>

@@ -7,11 +7,10 @@ class About extends Component {
     return (
       <div id="about-container">
         <div id="about-info">
-          <h2>Who is this wunderkind?</h2>
           <h2>
-            She’s a child of the Portland streets. A coder | An illustrator | A
-            gamer
+            01 // Who is this <span>wunderkind?</span>
           </h2>
+          <h2>She’s a child of the Portland streets.</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat
             pellentesque aliquet. Donec eget malesuada diam. Duis sodales eros
