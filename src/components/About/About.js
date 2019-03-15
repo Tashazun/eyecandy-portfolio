@@ -6,7 +6,6 @@ class About extends Component {
   render() {
     return (
       <div id="about-container">
-        <img src={profile} alt="Tasha Zuniga" />
         <div id="about-info">
           <h2>Who is this wunderkind?</h2>
           <h2>
@@ -21,6 +20,7 @@ class About extends Component {
             condimentum mi porttitor sed.
           </p>
         </div>
+        <img src={profile} alt="Tasha Zuniga" />
         <div id="profile">
           <h3>Profile</h3>
         </div>
