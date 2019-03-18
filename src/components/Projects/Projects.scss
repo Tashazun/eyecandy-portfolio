@@ -11,33 +11,31 @@
     place-self: center end;
   }
 
-  #project-block1 {
-    grid-area: 2/2/3/3;
+  %border-round {
     height: 10em;
     width: 10em;
-    background: blue;
     border-radius: 50%;
+  }
+
+  #project-block1 {
+    @extend %border-round;
+    grid-area: 2/2/3/3;
+    background: url(../../assets/food-truck.png) top;
   }
   #project-block2 {
+    @extend %border-round;
     grid-area: 2/3/3/4;
-    height: 10em;
-    width: 10em;
-    background: green;
-    border-radius: 50%;
+    background: url(../../assets/u-gyde.png);
   }
   #project-block3 {
+    @extend %border-round;
     grid-area: 2/4/3/5;
-    height: 10em;
-    width: 10em;
-    background: pink;
-    border-radius: 50%;
+    background: url(../../assets/xylephone.png);
   }
   #project-block4 {
+    @extend %border-round;
     grid-area: 2/5/3/6;
-    height: 10em;
-    width: 10em;
-    background: black;
-    border-radius: 50%;
+    background: url(../../assets/film.png);
   }
 
   #works {
