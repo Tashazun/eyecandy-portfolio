@@ -4,6 +4,7 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Landing from "../Landing/Landing";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 class App extends Component {
   render() {
@@ -14,7 +15,12 @@ class App extends Component {
         <Projects />
         <Skills />
         <footer className="App-footer">
-          <p>Footer</p>
+          <p>Tashazun(at)Gmail.com</p>
+          <div>
+            <FaGithub />
+            <FaLinkedinIn />
+            <FaTwitter />
+          </div>
         </footer>
       </div>
     );

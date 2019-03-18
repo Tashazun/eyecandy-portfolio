@@ -17,25 +17,33 @@
     border-radius: 50%;
   }
 
-  #project-block1 {
-    @extend %border-round;
+  #project-link1 {
     grid-area: 2/2/3/3;
-    background: url(../../assets/food-truck.png) top;
+    .project-block {
+      @extend %border-round;
+      background: url(../../assets/food-truck.png) top;
+    }
   }
-  #project-block2 {
-    @extend %border-round;
+  #project-link2 {
     grid-area: 2/3/3/4;
-    background: url(../../assets/u-gyde.png);
+    .project-block {
+      @extend %border-round;
+      background: url(../../assets/u-gyde.png);
+    }
   }
-  #project-block3 {
-    @extend %border-round;
+  #project-link3 {
     grid-area: 2/4/3/5;
-    background: url(../../assets/xylephone.png);
+    .project-block {
+      @extend %border-round;
+      background: url(../../assets/xylephone.png);
+    }
   }
-  #project-block4 {
-    @extend %border-round;
+  #project-link4 {
     grid-area: 2/5/3/6;
-    background: url(../../assets/film.png);
+    .project-block {
+      @extend %border-round;
+      background: url(../../assets/film.png);
+    }
   }
 
   #works {

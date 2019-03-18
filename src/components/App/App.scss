@@ -1,13 +1,32 @@
 .App-container {
   position: absolute;
   overflow: hidden;
-  height: 425vh;
+  height: 410vh;
   display: flex;
   flex-direction: column;
 }
 
 .App-footer {
   background: #ff3651;
-  height: 25vh;
+  height: 10vh;
   display: flex;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+    color: #00366b;
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+    align-self: flex-end;
+  }
+
+  div {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    color: #00366b;
+    font-size: 2em;
+  }
 }
