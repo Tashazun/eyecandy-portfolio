@@ -2,13 +2,14 @@
   background-color: #000000;
   min-height: 100vh;
   max-height: 100vh;
+  max-width: 100%;
   margin: 0;
 
   #top-layer {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 15% 15% 40% 15% 15%;
@@ -27,7 +28,6 @@
     }
     #border {
       height: 100vh;
-      width: 100vw;
       margin: 0.5em;
       border: 2px solid black;
       grid-area: 1/1/3/6;

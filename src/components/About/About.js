@@ -25,11 +25,11 @@ class About extends Component {
             </h2>
             <h2>She’s a child of the Portland streets.</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              feugiat pellentesque aliquet. Donec eget malesuada diam. Duis
-              sodales eros sit amet nulla fringilla, non iaculis enim posuere.
-              Donec et molestie quam, vel feugiat nibh. Sed molestie felis
-              mauris, sed condimentum mi porttitor sed.
+              An artist and a full-stack{" "}
+              <span role="img" aria-label="web">
+                🕸️
+              </span>{" "}
+              developer.
             </p>
           </div>
           <img src={profile} alt="Tasha Zuniga" />
