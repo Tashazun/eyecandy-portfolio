@@ -5,7 +5,8 @@ class Projects extends Component {
   render() {
     return (
       <div id="projects-container">
-        <h1>02 // Some projects she's worked on-</h1>
+        <h1>02 // Some projects she's worked on-</h1>{" "}
+        {/* eslint-disable-line */}
         <a id="project-link1" href="https://mobile-eats.herokuapp.com/">
           <div className="project-block" />
         </a>

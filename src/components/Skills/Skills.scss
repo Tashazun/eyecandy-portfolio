@@ -6,6 +6,7 @@
   grid-template-rows: repeat(3, 1fr);
   background: #ff3651;
   border-bottom: 2px solid #eb466d;
+  z-index: 2;
 
   img {
     height: 100vh;

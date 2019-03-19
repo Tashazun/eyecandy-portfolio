@@ -4,6 +4,8 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  z-index: 1;
+  position: relative;
 
   h1 {
     grid-area: 1/1/2/5;
@@ -49,6 +51,8 @@
   #works {
     grid-area: 1/6/2/7;
     place-self: start end;
+    position: sticky;
+    top: 20px;
 
     h3 {
       margin: 0;

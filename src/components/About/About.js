@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "intersection-observer";
 import Observer from "@researchgate/react-intersection-observer";
 import profile from "../../assets/profile-backdrop.svg";
 import "./About.scss";
@@ -8,8 +9,7 @@ class About extends Component {
     visibility: "hidden"
   };
 
-  handleChange = (event, unobserve) => {
-    console.log("I work");
+  handleChange = event => {
     this.setState({
       visibility: event.isIntersecting ? "visible" : "hidden"
     });
@@ -17,7 +17,7 @@ class About extends Component {
 
   render() {
     return (
-      <Observer onChange={this.handleChange} threshold={0.5}>
+      <Observer onChange={this.handleChange} threshold={0.25}>
         <div id="about-container">
           <div className={`about-info ${this.state.visibility}`}>
             <h2>
