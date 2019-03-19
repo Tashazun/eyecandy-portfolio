@@ -19,12 +19,13 @@
     height: 120vh;
   }
 
-  #about-info {
+  .about-info {
     margin-left: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: "Monda", sans-serif;
+    transition: transform 2s ease-out;
   }
 
   #profile {
@@ -41,5 +42,13 @@
       font-family: "Monda", sans-serif;
       writing-mode: vertical-rl;
     }
+  }
+
+  .hidden {
+    transform: translateX(-400px);
+  }
+
+  .visible {
+    transform: translateX(0);
   }
 }
