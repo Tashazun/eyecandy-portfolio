@@ -4,6 +4,7 @@
   max-height: 100vh;
   max-width: 100%;
   margin: 0;
+  z-index: 1;
 
   #top-layer {
     position: absolute;
@@ -15,6 +16,7 @@
     grid-template-columns: 15% 15% 40% 15% 15%;
     grid-template-rows: repeat(3, 1fr);
     background: white;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
     clip-path: polygon(0 0, 0% 100%, 100% 0);
 
     h2 {
@@ -54,9 +56,9 @@
     grid-template-rows: repeat(3, 1fr);
 
     #intro {
-      position: fixed;
-      top: 0;
-      left: 96%;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 10px;
       grid-area: 1/5/3/6;
       place-self: start end;
       display: flex;

@@ -34,11 +34,13 @@ class Skills extends Component {
             <span className="devicons devicons-postgresql" />
             <span className="devicons devicons-mongodb" />
             <span className="devicons devicons-heroku" />
+            <span className="devicons devicons-illustrator" />
           </div>
         </div>
         <div id="skills-mid">
           <h2>Side-to-side:</h2>
           <div>
+            <span className="devicons devicons-jira" />
             <FaDocker />
             <FaNpm />
             <FaGitSquare />

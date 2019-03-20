@@ -6,9 +6,11 @@
   grid-template-rows: repeat(3, 1fr);
   z-index: 1;
   position: relative;
+  background: white;
 
   h1 {
     grid-area: 1/1/2/5;
+    font-size: 3em;
     font-family: "Montserrat", sans-serif;
     place-self: center end;
   }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "intersection-observer";
 import Observer from "@researchgate/react-intersection-observer";
-import profile from "../../assets/profile-backdrop.svg";
+// import profile from "../../assets/profile-backdrop.svg";
 import "./About.scss";
 
 class About extends Component {
@@ -20,22 +20,16 @@ class About extends Component {
       <Observer onChange={this.handleChange} threshold={0.25}>
         <div id="about-container">
           <div className={`about-info ${this.state.visibility}`}>
-            <h2>
+            <h2 id="about-block1">
               01 // Who is this <span>wunderkind?</span>
             </h2>
-            <h2>She’s a child of the Portland streets.</h2>
-            <p>
-              An artist and a full-stack{" "}
-              <span role="img" aria-label="web">
-                🕸️
-              </span>{" "}
-              developer.
-            </p>
+            <h2 id="about-block2">She’s a child of the Portland streets...</h2>
           </div>
-          <img src={profile} alt="Tasha Zuniga" />
+          {/* <img src={profile} alt="Tasha Zuniga" /> */}
           <div id="profile">
             <h3>Profile</h3>
           </div>
+          <div id="white" />
         </div>
       </Observer>
     );
