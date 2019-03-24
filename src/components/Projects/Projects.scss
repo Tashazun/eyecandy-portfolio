@@ -2,32 +2,37 @@
 @import "./project-layout";
 
 #projects-container {
-  @extend %layout;
-  z-index: 1;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   position: relative;
   background: white;
 
   h1 {
+    margin: 0.5em;
     grid-area: 1/1/2/4;
     font-size: 3em;
     font-family: "Righteous", cursive;
     place-self: center end;
   }
 
+  .project-title {
+    @extend %title-content;
+  }
+
   #project-link1 {
+    height: 15em;
     grid-area: 2/2/3/4;
     position: relative;
-
-    .project-title {
-      @extend %title-content;
-    }
     &:after {
       @extend %extention;
       height: 0;
       width: 100%;
     }
     &:hover:after {
-      background: blue;
+      background: #5c801b;
       height: 100%;
     }
 
@@ -37,18 +42,16 @@
     }
   }
   #project-link2 {
+    height: 15em;
     grid-area: 3/2/4/4;
     position: relative;
-    .project-title {
-      @extend %title-content;
-    }
     &:after {
       @extend %extention;
       height: 100%;
       width: 0;
     }
     &:hover:after {
-      background: pink;
+      background: #1b8072;
       width: 100%;
     }
 
@@ -60,18 +63,15 @@
   #project-link3 {
     grid-area: 2/4/3/6;
     position: relative;
-    .project-title {
-      @extend %title-content;
-    }
     &:after {
       @extend %extention;
-      height: 0;
-      width: 100%;
+      height: 100%;
+      width: 0;
     }
 
     &:hover:after {
-      background: blue;
-      height: 100%;
+      background: #3f1b80;
+      width: 100%;
     }
     .project-block {
       @extend %block-dimensions;
@@ -81,19 +81,16 @@
   #project-link4 {
     grid-area: 3/4/4/6;
     position: relative;
-    .project-title {
-      @extend %title-content;
-    }
     &:after {
       @extend %extention;
-      height: 100%;
-      width: 0;
-    }
-
-    &:hover:after {
-      background: #801b29;
+      height: 0;
       width: 100%;
     }
+    &:hover:after {
+      background: #801b29;
+      height: 100%;
+    }
+
     .project-block {
       @extend %block-dimensions;
       background: url(../../assets/film.png) no-repeat left;
