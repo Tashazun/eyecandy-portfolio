@@ -1,0 +1,16 @@
+%layout {
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+%component-title {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  font-family: "Monda", sans-serif;
+  writing-mode: vertical-rl;
+}
