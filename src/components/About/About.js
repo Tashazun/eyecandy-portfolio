@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import "intersection-observer";
 import Observer from "@researchgate/react-intersection-observer";
-// import profile from "../../assets/profile-backdrop.svg";
+import profile from "../../assets/Navi2.png";
 import "./About.scss";
 
 class About extends Component {
   state = {
-    visibility: "hidden"
+    enterLeft: "hidden-left",
+    enterRight: "hidden-right"
   };
 
   handleChange = event => {
     this.setState({
-      visibility: event.isIntersecting ? "visible" : "hidden"
+      enterLeft: event.isIntersecting ? "visible-left" : "hidden-left",
+      enterRight: event.isIntersecting ? "visible-right" : "hidden-right"
     });
   };
 
@@ -19,17 +21,22 @@ class About extends Component {
     return (
       <Observer onChange={this.handleChange} threshold={0.25}>
         <div id="about-container">
-          <div className={`about-info ${this.state.visibility}`}>
+          <div className={`about-info ${this.state.enterLeft}`}>
             <h2 id="about-block1">
               01 // Who is this <span>wunderkind?</span>
             </h2>
             <h2 id="about-block2">She’s a child of the Portland streets...</h2>
           </div>
-          {/* <img src={profile} alt="Tasha Zuniga" /> */}
+
           <div id="profile">
             <h3>Profile</h3>
           </div>
           <div id="white" />
+          <img
+            className={`${this.state.enterRight}`}
+            src={profile}
+            alt="Tasha Zuniga"
+          />
         </div>
       </Observer>
     );

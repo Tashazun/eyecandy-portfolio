@@ -6,11 +6,6 @@
   grid-template-rows: repeat(3, 1fr);
   background: black;
 
-  img {
-    grid-column: 3 / span 3;
-    height: 120vh;
-  }
-
   #about-block1 {
     margin: 0;
     font-family: "Righteous", cursive;
@@ -41,8 +36,9 @@
   }
 
   #profile {
-    z-index: 1;
+    z-index: 2;
     height: 7em;
+    background: white;
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
@@ -59,12 +55,19 @@
     }
   }
 
-  .hidden {
+  .hidden-left {
     transform: translateX(-50em);
   }
 
-  .visible {
+  .visible-left {
     transform: translateX(0);
+  }
+  .hidden-right {
+    opacity: 0;
+  }
+
+  .visible-right {
+    opacity: 100%;
   }
 
   #white {
@@ -72,5 +75,12 @@
     background: white;
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+  img {
+    grid-area: 1/3/4/7;
+    place-self: center end;
+    height: 100vh;
+    z-index: 1;
+    transition: opacity 3s;
   }
 }
