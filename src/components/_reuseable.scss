@@ -14,3 +14,26 @@
   font-family: "Monda", sans-serif;
   writing-mode: vertical-rl;
 }
+
+%arrow-container {
+  margin: 0.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 10px;
+  height: 5em;
+}
+
+%arrow-tail {
+  align-self: center;
+  width: 1px;
+  height: 5em;
+}
+
+%arrow-head {
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}

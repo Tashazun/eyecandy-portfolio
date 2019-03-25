@@ -2,29 +2,32 @@
 @import "./project-layout";
 
 #projects-container {
-  height: 100vh;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  @extend %layout;
   position: relative;
   background: white;
 
   h1 {
     margin: 0.5em;
-    grid-area: 1/1/2/4;
+    grid-area: 1/1/2/5;
     font-size: 3em;
     font-family: "Righteous", cursive;
-    place-self: center end;
+    place-self: center start;
   }
 
   .project-title {
     @extend %title-content;
   }
 
+  #project-frame {
+    grid-area: 2/1/4/7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
   #project-link1 {
-    height: 15em;
-    grid-area: 2/2/3/4;
+    @extend %block-shape;
     position: relative;
     &:after {
       @extend %extention;
@@ -35,15 +38,14 @@
       background: #5c801b;
       height: 100%;
     }
-
     .project-block {
       @extend %block-dimensions;
       background: url(../../assets/food-truck.png) top;
     }
   }
+
   #project-link2 {
-    height: 15em;
-    grid-area: 3/2/4/4;
+    @extend %block-shape;
     position: relative;
     &:after {
       @extend %extention;
@@ -54,21 +56,20 @@
       background: #1b8072;
       width: 100%;
     }
-
     .project-block {
       @extend %block-dimensions;
       background: url(../../assets/ugyde.png) no-repeat center;
     }
   }
+
   #project-link3 {
-    grid-area: 2/4/3/6;
+    @extend %block-shape;
     position: relative;
     &:after {
       @extend %extention;
       height: 100%;
       width: 0;
     }
-
     &:hover:after {
       background: #3f1b80;
       width: 100%;
@@ -78,8 +79,9 @@
       background: url(../../assets/xylephone.png);
     }
   }
+
   #project-link4 {
-    grid-area: 3/4/4/6;
+    @extend %block-shape;
     position: relative;
     &:after {
       @extend %extention;
@@ -90,7 +92,6 @@
       background: #801b29;
       height: 100%;
     }
-
     .project-block {
       @extend %block-dimensions;
       background: url(../../assets/film.png) no-repeat left;

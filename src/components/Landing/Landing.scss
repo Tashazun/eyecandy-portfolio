@@ -1,3 +1,5 @@
+@import "../reuseable";
+
 .landing-page {
   background-color: #000000;
   min-height: 100vh;
@@ -66,37 +68,21 @@
       align-items: center;
 
       h3 {
-        margin: 0.5em;
-        margin-top: 1.5em;
-        font-size: 1em;
-        letter-spacing: 0.2em;
-        font-family: "Monda", sans-serif;
-        writing-mode: vertical-rl;
+        @extend %component-title;
         color: white;
       }
 
       #arrow-container {
-        margin: 0.5em;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 10px;
-        height: 5em;
+        @extend %arrow-container;
 
         #arrow-tail {
-          align-self: center;
-          width: 1px;
-          height: 5em;
+          @extend %arrow-tail;
           border-right: 1px solid white;
         }
 
         #arrow-down {
-          position: absolute;
-          left: 0;
+          @extend %arrow-head;
           bottom: 0;
-          width: 10px;
-          height: 10px;
-          transform: rotate(45deg);
           border-right: 1px solid white;
           border-bottom: 1px solid white;
         }

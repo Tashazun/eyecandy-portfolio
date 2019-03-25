@@ -1,12 +1,8 @@
+@import "../reuseable";
+
 #skills-container {
-  height: 100vh;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  @extend %layout;
   background: #e090ad;
-  border-bottom: 2px solid #eb466d;
-  z-index: 2;
 
   img {
     height: 100vh;
@@ -14,9 +10,10 @@
   }
 
   h1 {
-    border-radius: 5px;
-    font-family: "Montserrat", sans-serif;
     grid-area: 1/1/2/4;
+    border-radius: 5px;
+    font-family: "Righteous", cursive;
+    font-size: 2.5em;
     place-self: start center;
     background: #ff365170;
   }
@@ -78,8 +75,8 @@
     align-items: center;
 
     h3 {
-      margin: 0.5em;
-      font-size: 1em;
+      margin: 0;
+      font-size: 1.2em;
       letter-spacing: 0.2em;
       font-family: "Monda", sans-serif;
       writing-mode: vertical-rl;
@@ -87,28 +84,17 @@
     }
 
     #arrow-container {
-      margin: 0.5em;
+      @extend %arrow-container;
       margin-top: 1.5em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 10px;
-      height: 5em;
 
       #arrow-tail {
-        align-self: center;
-        width: 1px;
-        height: 5em;
+        @extend %arrow-tail;
         border-right: 1px solid black;
       }
 
       #arrow-up {
-        position: absolute;
-        left: 0;
+        @extend %arrow-head;
         top: 0;
-        width: 10px;
-        height: 10px;
-        transform: rotate(45deg);
         border-left: 1px solid black;
         border-top: 1px solid black;
       }
