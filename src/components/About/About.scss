@@ -1,7 +1,11 @@
 @import "../reuseable";
 
 #about-container {
-  @extend %layout;
+  height: 200vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   background: black;
 
   #about-block1 {
@@ -21,10 +25,22 @@
   .about-info {
     margin-left: 1em;
     grid-area: 1/1/3/3;
+    place-self: end center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: transform 1.5s ease-out;
+  }
+
+  .about-summary {
+    margin-left: 1em;
+    grid-area: 4/1/7/3;
+    color: white;
+    font-family: "Monda", sans-serif;
+
+    p {
+      margin-bottom: 1em;
+    }
   }
 
   #profile {
@@ -59,12 +75,18 @@
   }
 
   #white {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     grid-area: 1/1/4/7;
     background: white;
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
   img {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     grid-area: 1/3/4/7;
     place-self: center end;
     height: 100vh;

@@ -28,6 +28,23 @@ class About extends Component {
             <h2 id="about-block2">She’s a child of the Portland streets...</h2>
           </div>
 
+          <div className={`about-summary ${this.state.enterLeft}`}>
+            <p>
+              An enthusiastic professional who strives to make thrilling,
+              interactive, front-end experiences.
+            </p>
+            <p>
+              She's an unapologetic artist and full-stack Javascript developer
+              who uses her knowledge of front and back-end to make some really
+              cool stuff.
+            </p>
+            <p>
+              When away from the computer, or a sketch book, she can often be
+              found practising with her longsword and taking her dog(world's
+              goodest boy) out for long hikes.
+            </p>
+          </div>
+
           <div id="profile">
             <h3>Profile</h3>
           </div>
