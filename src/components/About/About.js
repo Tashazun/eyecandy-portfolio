@@ -28,7 +28,7 @@ class About extends Component {
             <h2 id="about-block2">She’s a child of the Portland streets...</h2>
           </div>
 
-          <div className={`about-summary ${this.state.enterLeft}`}>
+          <div id="about-summary">
             <p>
               An enthusiastic professional who strives to make thrilling,
               interactive, front-end experiences.
@@ -40,7 +40,7 @@ class About extends Component {
             </p>
             <p>
               When away from the computer, or a sketch book, she can often be
-              found practising with her longsword and taking her dog(world's
+              found practising with her longsword and taking her dog(worlds
               goodest boy) out for long hikes.
             </p>
           </div>

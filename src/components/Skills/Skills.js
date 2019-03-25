@@ -8,6 +8,9 @@ class Skills extends Component {
       <div id="skills-container">
         <img src={doggo} alt="cute doggo" />
         <h1>03 \\ What can she do?</h1>
+        <div id="skills-summary">
+          <p>Javascript</p>
+        </div>
         <div id="skills">
           <div id="arrow-container">
             <div id="arrow-tail" />

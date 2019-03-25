@@ -1,15 +1,24 @@
 @import "../reuseable";
 
 #skills-container {
-  @extend %layout;
-  background: #e090ad;
+  height: 200vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  background: #ff3651;
 
   img {
-    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
     grid-area: 1/1/4/5;
   }
 
   h1 {
+    z-index: 1;
     grid-area: 1/1/2/4;
     border-radius: 5px;
     font-family: "Righteous", cursive;
@@ -18,50 +27,9 @@
     background: #ff365170;
   }
 
-  %icon-layout {
-    font-size: 2em;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  %icons {
-    margin: 0.5em;
-    border-radius: 5%;
-    font-family: "Montserrat", sans-serif;
-    h2 {
-      background: #ff365170;
-      border-radius: 5px;
-    }
-    div {
-      font-size: 2em;
-      display: flex;
-      justify-content: space-evenly;
-    }
-    svg {
-      background: #ff365170;
-      border: 0.2em solid #ff365170;
-      border-radius: 10px;
-    }
-  }
-
-  #skills-front {
-    @extend %icons;
-    grid-area: 1/5/2/6;
-  }
-
-  #skills-back {
-    @extend %icons;
-    grid-area: 2/5/3/6;
-    span {
-      background: #ff365170;
-      border: 0.2em solid #ff365170;
-      border-radius: 10px;
-    }
-  }
-
-  #skills-mid {
-    @extend %icons;
-    grid-area: 3/5/4/6;
+  #skills-summary {
+    grid-area: 1/5/7/7;
+    background: white;
   }
 
   #skills {
