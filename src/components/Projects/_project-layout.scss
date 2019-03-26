@@ -1,37 +1,55 @@
-%block-dimensions {
-  height: 100%;
-  width: 100%;
+%link-layout {
+  position: relative;
+  align-self: center;
+  height: 5em;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-%block-shape {
-  height: 16em;
-  width: 15em;
-}
-
-%extention {
-  content: "";
-  left: 0;
-  top: 0;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-}
-
-%title-content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  color: transparent;
-  font-family: "Josefin Sans", sans-serif;
-  transition: color 0.4s ease 0s;
-  &:hover {
-    color: white;
+%hover-effect {
+  .project-title {
+    transform: scaleY(25);
   }
+  .project-block {
+    grid-column: 1/5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    img {
+      height: 20em;
+      width: 20em;
+      position: absolute;
+      top: -10em;
+      left: 35%;
+    }
+    h4 {
+      margin: 1em;
+    }
+  }
+  h3 {
+    opacity: 0;
+  }
+}
+
+%project-name {
+  margin: 0;
+  position: absolute;
+  top: -0.3em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  background: white;
+  transition: opacity;
+}
+
+%project-small {
+  grid-column: 1/5;
+  height: 0.3em;
+  width: 100%;
+  background: black;
+  transition: transform 0.5s ease-in-out;
 }

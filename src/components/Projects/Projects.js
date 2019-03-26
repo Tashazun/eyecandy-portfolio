@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./Projects.scss";
 
+import burrito from "../../assets/burrito.png";
+import star from "../../assets/gold-star.png";
+
 class Projects extends Component {
   render() {
     return (
@@ -11,6 +14,7 @@ class Projects extends Component {
           <h3>Mobile Eats</h3>
           <div className="project-block">
             <h4>Food Truck Tracker</h4>
+            <img src={burrito} alt="food cart burrito" />
             <h4>React</h4>
           </div>
         </a>
@@ -22,6 +26,7 @@ class Projects extends Component {
           <h3>Ugyde Review App</h3>
           <div className="project-block">
             <h4>Video Business Reviews</h4>
+            <img src={star} alt="gold star" />
             <h4>React + Firebase</h4>
           </div>
         </a>
