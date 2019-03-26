@@ -6,7 +6,7 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr) 5em;
   position: relative;
   background: white;
 
@@ -34,7 +34,7 @@
     }
     h3 {
       @extend %project-name;
-      left: 15%;
+      left: 25%;
       color: #3f1b80;
     }
   }
@@ -47,7 +47,7 @@
     }
     h3 {
       @extend %project-name;
-      left: 25%;
+      left: 15%;
       color: #1b8072;
     }
   }
@@ -60,7 +60,7 @@
     }
     h3 {
       @extend %project-name;
-      left: 15%;
+      left: 25%;
       color: #5c801b;
     }
   }
@@ -73,7 +73,7 @@
     }
     h3 {
       @extend %project-name;
-      left: 25%;
+      left: 15%;
       color: #801b29;
     }
   }

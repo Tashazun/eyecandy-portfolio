@@ -3,6 +3,8 @@ import "./Projects.scss";
 
 import burrito from "../../assets/burrito.png";
 import star from "../../assets/gold-star.png";
+import film from "../../assets/film-reel.png";
+import xylophone from "../../assets/rainbow-xylophone.png";
 
 class Projects extends Component {
   render() {
@@ -35,6 +37,7 @@ class Projects extends Component {
           <h3>Zen Xylophone</h3>
           <div className="project-block">
             <h4>Cute, Colorful Music Maker</h4>
+            <img src={xylophone} alt="rainbow xylophone" />
             <h4>Pure Javascript</h4>
           </div>
         </a>
@@ -43,6 +46,7 @@ class Projects extends Component {
           <h3>Deep Focus</h3>
           <div className="project-block">
             <h4>Technical Film Reviews</h4>
+            <img src={film} alt="film reel" />
             <h4>React/Redux + Node/Express</h4>
           </div>
         </a>
