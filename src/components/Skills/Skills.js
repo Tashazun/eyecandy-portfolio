@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import doggo from "../../assets/doggo.svg";
 import "./Skills.scss";
 import Design from "./Graphs/Design";
+import Coding from "./Graphs/Coding";
 
 class Skills extends Component {
   render() {
@@ -11,6 +12,7 @@ class Skills extends Component {
         <h1>03 \\ What can she do?</h1>
         <div id="skills-summary">
           <Design />
+          <Coding />
         </div>
         <div id="skills">
           <div id="arrow-container">
