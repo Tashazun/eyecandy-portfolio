@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import doggo from "../../assets/doggo.svg";
 import "./Skills.scss";
+import Design from "./Graphs/Design";
 
 class Skills extends Component {
   render() {
@@ -9,7 +10,7 @@ class Skills extends Component {
         <img src={doggo} alt="cute doggo" />
         <h1>03 \\ What can she do?</h1>
         <div id="skills-summary">
-          <p>Javascript</p>
+          <Design />
         </div>
         <div id="skills">
           <div id="arrow-container">

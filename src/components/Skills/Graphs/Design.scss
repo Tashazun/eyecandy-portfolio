@@ -1,0 +1,40 @@
+.design-container {
+  height: 65vh;
+  width: 80%;
+
+  .design-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  #graph-bar1 {
+    height: 2em;
+    width: 25%;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background: #ff3651;
+  }
+  #graph-bar2 {
+    height: 2em;
+    width: 25%;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background: #ff3651;
+  }
+  #graph-bar3 {
+    height: 2em;
+    width: 45%;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background: #ff3651;
+  }
+  #graph-bar4 {
+    height: 2em;
+    width: 10%;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background: #ff3651;
+  }
+}
