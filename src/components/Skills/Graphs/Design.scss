@@ -11,33 +11,27 @@
     font-family: "Josefin Sans", sans-serif;
   }
 
-  #graph-bar1 {
-    height: 2em;
+  .graph-bar1 {
+    @extend %graph-bar;
     width: 25%;
-    border-bottom-right-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    background: #ff3651;
+    transform: translateX(-10em);
+    transition: transform 1.5s ease-out 0.5s;
   }
-  #graph-bar2 {
-    height: 2em;
+  .graph-bar2 {
+    @extend %graph-bar;
     width: 25%;
-    border-bottom-right-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    background: #ff3651;
   }
-  #graph-bar3 {
-    height: 2em;
+  .graph-bar3 {
+    @extend %graph-bar;
     width: 45%;
-    border-bottom-right-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    background: #ff3651;
   }
-  #graph-bar4 {
-    height: 2em;
+  .graph-bar4 {
+    @extend %graph-bar;
     width: 10%;
-    border-bottom-right-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    background: #ff3651;
+  }
+
+  .slide-in {
+    transform: translateX(0);
   }
 }
 .visible {

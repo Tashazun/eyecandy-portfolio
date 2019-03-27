@@ -7,16 +7,6 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
 
-  background: #ff3651;
-
-  img {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    grid-area: 1/1/4/5;
-  }
-
   h1 {
     z-index: 1;
     grid-area: 1/1/2/4;
@@ -25,6 +15,19 @@
     font-size: 2.5em;
     place-self: start center;
     background: #ff365170;
+  }
+
+  #skills-img {
+    z-index: 1;
+    background: #ff3651;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    grid-area: 1/1/4/5;
+    img {
+      width: 100%;
+    }
   }
 
   #skills-summary {

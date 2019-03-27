@@ -5,6 +5,8 @@ import "./Design.scss";
 
 class Design extends Component {
   render() {
+    const slide = `${this.props.isVisible ? "slide-in" : ""}`;
+
     return (
       <div
         className={`design-container ${
@@ -13,20 +15,20 @@ class Design extends Component {
       >
         <h4>Design</h4>
         <div id="design-graph">
-          <div className="design-block block1">
-            <h4 id="graph-bar1">25%</h4>
+          <div className="design-block">
+            <h4 className={`graph-bar1 ${slide}`}>25%</h4>
             <h4>Photoshop</h4>
           </div>
-          <div className="design-block block2">
-            <h4 id="graph-bar2">25%</h4>
+          <div className="design-block">
+            <h4 className="graph-bar2 slide">25%</h4>
             <h4>Illustrator/Inkscape</h4>
           </div>
-          <div className="design-block block3">
-            <h4 id="graph-bar3">45%</h4>
+          <div className="design-block">
+            <h4 className="graph-bar3 slide">45%</h4>
             <h4>Drawing</h4>
           </div>
-          <div className="design-block block3">
-            <h4 id="graph-bar4">5%</h4>
+          <div className="design-block">
+            <h4 className="graph-bar4 slide">5%</h4>
             <h4>InDesign</h4>
           </div>
         </div>
@@ -35,4 +37,4 @@ class Design extends Component {
   }
 }
 
-export default withIntersectionObserver(0.99)(Design);
+export default withIntersectionObserver(0.7)(Design);
