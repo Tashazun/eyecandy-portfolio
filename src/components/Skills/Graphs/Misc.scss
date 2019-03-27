@@ -1,43 +1,51 @@
 @import "./graph-layout";
 
-.coding-container {
-  @extend %layout;
+.misc-container {
+  height: 69vh;
+  width: 80%;
   transition: opacity 1.5s ease-out;
 
-  #coding-title {
+  #misc-title {
     @extend %title;
   }
 
-  .coding-block {
+  .misc-block {
     @extend %block;
   }
 
   .graph-bar1 {
     @extend %graph-bar;
-    width: 40%;
+    width: 35%;
     transform: translateX(-10em);
     transition: transform 1s ease-out 0.5s;
   }
   .graph-bar2 {
     @extend %graph-bar;
-    width: 35%;
+    width: 30%;
     transform: translateX(-10em);
     transition: transform 1s ease-out 0.8s;
   }
   .graph-bar3 {
     @extend %graph-bar;
-    width: 10%;
+    width: 15%;
     transform: translateX(-12em);
     transition: transform 1s ease-out 1s;
   }
   .graph-bar4 {
     @extend %graph-bar;
-    width: 15%;
+    width: 20%;
     transform: translateX(-10em);
     transition: transform 1s ease-out 1.2s;
   }
 
   .slide-in {
     transform: translateX(0);
+  }
+
+  #good-bye {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Josefin Sans", sans-serif;
   }
 }

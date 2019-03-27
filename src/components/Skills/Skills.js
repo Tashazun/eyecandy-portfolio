@@ -3,6 +3,7 @@ import doggo from "../../assets/doggo.svg";
 import "./Skills.scss";
 import Design from "./Graphs/Design";
 import Coding from "./Graphs/Coding";
+import Misc from "./Graphs/Misc";
 
 class Skills extends Component {
   render() {
@@ -15,6 +16,7 @@ class Skills extends Component {
         <div id="skills-summary">
           <Design />
           <Coding />
+          <Misc />
         </div>
         <div id="skills">
           <div id="arrow-container">

@@ -6,6 +6,7 @@
 }
 
 .App-footer {
+  z-index: 1;
   background: white;
   height: 10vh;
   display: flex;
@@ -14,7 +15,7 @@
   p {
     margin: 0;
     margin-left: 0.3em;
-    color: black;
+    color: #801b29;
     font-size: 2.5em;
     font-family: "Montserrat", sans-serif;
     align-self: flex-end;
@@ -27,7 +28,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    color: black;
+    color: #801b29;
     font-size: 2em;
   }
 }

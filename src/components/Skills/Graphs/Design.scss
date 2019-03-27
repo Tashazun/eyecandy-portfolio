@@ -4,40 +4,40 @@
   @extend %layout;
   transition: opacity 1.5s ease-out;
 
+  #design-title {
+    @extend %title;
+  }
+
   .design-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Josefin Sans", sans-serif;
+    @extend %block;
   }
 
   .graph-bar1 {
     @extend %graph-bar;
     width: 25%;
     transform: translateX(-10em);
-    transition: transform 1.5s ease-out 0.5s;
+    transition: transform 1s ease-out 0.5s;
   }
   .graph-bar2 {
     @extend %graph-bar;
     width: 25%;
+    transform: translateX(-10em);
+    transition: transform 1s ease-out 0.8s;
   }
   .graph-bar3 {
     @extend %graph-bar;
     width: 45%;
+    transform: translateX(-12em);
+    transition: transform 1s ease-out 1s;
   }
   .graph-bar4 {
     @extend %graph-bar;
     width: 10%;
+    transform: translateX(-10em);
+    transition: transform 1s ease-out 1.2s;
   }
 
   .slide-in {
     transform: translateX(0);
   }
-}
-.visible {
-  opacity: 100%;
-}
-
-.transparent {
-  opacity: 0;
 }
