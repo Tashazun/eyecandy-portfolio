@@ -1,3 +1,18 @@
+@import "../../reuseable";
+
+@mixin bar($width, $transform, $transition) {
+  display: flex;
+  align-items: center;
+  height: 2em;
+  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background: #ff3651;
+  box-shadow: -7px 11px 5px -4px rgba(0, 0, 0, 0.75);
+  width: $width;
+  transform: translateX($transform);
+  transition: transform 1s ease-out $transition;
+}
+
 %layout {
   height: 65vh;
   width: 80%;

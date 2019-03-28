@@ -1,11 +1,7 @@
 @import "../reuseable";
 
 #skills-container {
-  height: 200vh;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  @include layout(200vh, repeat(6, 1fr), repeat(6, 1fr));
 
   h1 {
     z-index: 1;
@@ -18,11 +14,9 @@
   }
 
   #skills-img {
+    @include sticky(0);
     z-index: 1;
     background: #ff3651;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     width: 100%;
     grid-area: 1/1/4/5;
     img {
@@ -36,9 +30,7 @@
   }
 
   #skills {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    @include sticky(10px);
     grid-area: 1/6/3/7;
     place-self: start end;
     display: flex;
@@ -46,11 +38,7 @@
     align-items: center;
 
     h3 {
-      margin: 0;
-      font-size: 1.2em;
-      letter-spacing: 0.2em;
-      font-family: "Monda", sans-serif;
-      writing-mode: vertical-rl;
+      @extend %component-title;
       color: black;
     }
 

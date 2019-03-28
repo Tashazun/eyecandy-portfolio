@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+
 import "./App.scss";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Landing from "../Landing/Landing";
+
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 class App extends Component {

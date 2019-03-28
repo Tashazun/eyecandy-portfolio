@@ -1,12 +1,11 @@
 @import "../reuseable";
 
 .landing-page {
-  background-color: #000000;
-  min-height: 100vh;
-  max-height: 100vh;
-  max-width: 100%;
   margin: 0;
   z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
 
   #top-layer {
     position: absolute;
@@ -58,9 +57,7 @@
     grid-template-rows: repeat(3, 1fr);
 
     #intro {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 10px;
+      @include sticky(10px);
       grid-area: 1/5/3/6;
       place-self: start end;
       display: flex;
@@ -69,6 +66,7 @@
 
       h3 {
         @extend %component-title;
+        margin-top: 1em;
         color: white;
       }
 

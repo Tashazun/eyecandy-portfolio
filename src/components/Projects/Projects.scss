@@ -2,11 +2,7 @@
 @import "./project-layout";
 
 #projects-container {
-  height: 150vh;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr) 5em;
+  @include layout(150vh, repeat(6, 1fr), repeat(5, 1fr) 5em);
   position: relative;
   background: white;
 
@@ -79,12 +75,12 @@
   }
 
   #works {
+    @include sticky(20px);
     grid-area: 1/6/2/7;
     place-self: start end;
-    position: sticky;
-    top: 20px;
     h3 {
       @extend %component-title;
+      margin-top: 1em;
       color: #a80016;
       background: white;
     }

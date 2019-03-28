@@ -1,14 +1,19 @@
-%layout {
-  height: 100vh;
-  max-width: 100%;
+@mixin layout($height, $columns, $rows) {
+  height: $height;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+@mixin sticky($top) {
+  position: -webkit-sticky;
+  position: sticky;
+  top: $top;
 }
 
 %component-title {
   margin: 0;
-  margin-top: 1em;
   font-size: 1.2em;
   letter-spacing: 0.2em;
   font-family: "Monda", sans-serif;
@@ -36,4 +41,21 @@
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
+}
+
+// media-queries
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
 }

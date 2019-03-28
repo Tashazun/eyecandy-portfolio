@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "intersection-observer";
 import Observer from "@researchgate/react-intersection-observer";
-import profile from "../../assets/Navi2.png";
+
 import "./About.scss";
 
+import profile from "../../assets/Navi2.png";
 class About extends Component {
   state = {
     enterLeft: "hidden-left",

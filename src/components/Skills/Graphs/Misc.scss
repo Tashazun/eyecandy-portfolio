@@ -14,28 +14,16 @@
   }
 
   .graph-bar1 {
-    @extend %graph-bar;
-    width: 35%;
-    transform: translateX(-10em);
-    transition: transform 1s ease-out 0.5s;
+    @include bar(35%, -10em, 0.5s);
   }
   .graph-bar2 {
-    @extend %graph-bar;
-    width: 30%;
-    transform: translateX(-10em);
-    transition: transform 1s ease-out 0.8s;
+    @include bar(30%, -10em, 0.8s);
   }
   .graph-bar3 {
-    @extend %graph-bar;
-    width: 15%;
-    transform: translateX(-12em);
-    transition: transform 1s ease-out 1s;
+    @include bar(15%, -12em, 1s);
   }
   .graph-bar4 {
-    @extend %graph-bar;
-    width: 20%;
-    transform: translateX(-10em);
-    transition: transform 1s ease-out 1.2s;
+    @include bar(20%, -10em, 1.2s);
   }
 
   .slide-in {
