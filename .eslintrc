@@ -1,8 +1,10 @@
 {
     "plugins": ["prettier", "cypress", "react"],
     "env": {
+      "node": true,
       "cypress/globals": true
     },
+    "parser": "babel-eslint",
     "rules": {
       "prettier/prettier": "error"
     },
@@ -11,4 +13,4 @@
       "eslint:recommended",
       "plugin:react/recommended"
     ]
-  }
+}

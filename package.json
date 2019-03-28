@@ -2,6 +2,10 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.8.0"
+  },
   "dependencies": {
     "@researchgate/react-intersection-observer": "^0.7.4",
     "intersection-observer": "^0.5.1",
@@ -9,8 +13,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-icons": "^3.4.0",
-    "react-scripts": "^2.1.5",
-    "typescript": "^3.3.3333",
+    "react-scripts": "^2.1.8",
+    "typescript": "^3.3.4000",
     "vivus": "^0.4.4"
   },
   "scripts": {
