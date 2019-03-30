@@ -23,7 +23,7 @@
     h2 {
       margin: 0;
       grid-area: 1/1/3/2;
-      font-size: 1.5em;
+      @include responsive-font(2vw, 20px, 35px);
       letter-spacing: 0.2em;
       font-family: "Monda", sans-serif;
       writing-mode: vertical-rl;
@@ -44,8 +44,17 @@
     }
 
     #black {
-      grid-area: 1/2/4/5;
+      grid-area: 1/1/5/6;
       place-self: center stretch;
+
+      @include tablet {
+        grid-area: 1/2/4/5;
+        place-self: center stretch;
+      }
+      @include desktop {
+        grid-area: 1/2/4/5;
+        place-self: center stretch;
+      }
     }
   }
 
@@ -66,8 +75,15 @@
 
       h3 {
         @extend %component-title;
-        margin-top: 1em;
+        margin-top: 1.5em;
         color: white;
+
+        @include tablet {
+          margin-top: 1em;
+        }
+        @include desktop {
+          margin-top: 1em;
+        }
       }
 
       #arrow-container {
@@ -88,8 +104,17 @@
     }
 
     #white {
-      grid-area: 1/2/4/5;
+      grid-area: 1/1/5/6;
       place-self: center stretch;
+
+      @include tablet {
+        grid-area: 1/2/4/5;
+        place-self: center stretch;
+      }
+      @include desktop {
+        grid-area: 1/2/4/5;
+        place-self: center stretch;
+      }
     }
   }
 }

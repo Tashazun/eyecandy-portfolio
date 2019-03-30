@@ -10,6 +10,7 @@
 
   .coding-block {
     @extend %block;
+    @include responsive-font(2vw, 16px, 35px);
   }
 
   .graph-bar1 {

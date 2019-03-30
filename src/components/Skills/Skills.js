@@ -9,14 +9,14 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills-container">
-        <div id="skills-img">
-          <img src={doggo} alt="cute doggo" />
-        </div>
         <h1>03 \\ What can she do?</h1>
         <div id="skills-summary">
           <Design />
           <Coding />
           <Misc />
+        </div>
+        <div id="skills-img">
+          <img src={doggo} alt="cute doggo" />
         </div>
         <div id="skills">
           <div id="arrow-container">

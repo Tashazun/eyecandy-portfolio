@@ -8,34 +8,49 @@
     margin: 0;
     color: white;
     font-family: "Righteous", cursive;
-    font-size: 3.5em;
+    @include responsive-font(5vw, 35px, 150px);
   }
 
   #about-block2 {
     margin: 0;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 2em;
+    @include responsive-font(4vw, 30px, 140px);
   }
 
   .about-info {
     margin-left: 1em;
-    grid-area: 1/1/3/3;
+    grid-area: 1/1/2/7;
     place-self: end center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: transform 1.5s ease-out;
+
+    @include tablet {
+      grid-area: 1/1/3/3;
+    }
+    @include desktop {
+      grid-area: 1/1/3/3;
+    }
   }
 
   #about-summary {
     margin-left: 1em;
-    grid-area: 4/1/7/3;
+    grid-area: 2/1/6/7;
     color: white;
     font-family: "Monda", sans-serif;
 
+    @include tablet {
+      grid-area: 4/1/7/3;
+    }
+    @include desktop {
+      grid-area: 4/1/7/3;
+    }
+
     p {
       margin-bottom: 1em;
+      @include responsive-font(2vw, 16px, 25px);
     }
   }
 
@@ -44,9 +59,19 @@
     z-index: 2;
     height: 7em;
     margin-top: 1.1em;
-    background: white;
+    color: white;
+    background: black;
     grid-area: 1/6/3/7;
     place-self: start end;
+
+    @include tablet {
+      color: black;
+      background: white;
+    }
+    @include desktop {
+      color: black;
+      background: white;
+    }
 
     h3 {
       @extend %component-title;
@@ -71,18 +96,34 @@
   }
 
   #white {
-    @include sticky(0);
-    grid-area: 1/1/4/7;
+    grid-area: 4/1/7/7;
     background: white;
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    @include tablet {
+      @include sticky(0);
+      grid-area: 1/1/4/7;
+    }
+    @include desktop {
+      @include sticky(0);
+      grid-area: 1/1/4/7;
+    }
   }
   img {
-    @include sticky(0);
-    grid-area: 1/3/4/7;
+    grid-area: 4/3/7/7;
     place-self: center end;
     height: 100vh;
     z-index: 1;
     transition: opacity 3s;
+
+    @include tablet {
+      @include sticky(0);
+      grid-area: 1/3/4/7;
+    }
+    @include desktop {
+      @include sticky(0);
+      grid-area: 1/3/4/7;
+    }
   }
 }

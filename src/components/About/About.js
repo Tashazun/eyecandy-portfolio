@@ -45,16 +45,15 @@ class About extends Component {
               goodest boy) out for long hikes.
             </p>
           </div>
-
-          <div id="profile">
-            <h3>Profile</h3>
-          </div>
           <div id="white" />
           <img
             className={`${this.state.enterRight}`}
             src={profile}
             alt="Tasha Zuniga"
           />
+          <div id="profile">
+            <h3>Profile</h3>
+          </div>
         </div>
       </Observer>
     );

@@ -22,7 +22,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 1.2em;
+  @include responsive-font(3vw, 18px, 35px);
   font-family: "Righteous", cursive;
 }
 

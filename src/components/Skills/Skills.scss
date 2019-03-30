@@ -5,27 +5,43 @@
 
   h1 {
     z-index: 1;
-    grid-area: 1/1/2/4;
+    grid-area: 1/1/2/7;
     border-radius: 5px;
     font-family: "Righteous", cursive;
     font-size: 2.5em;
     place-self: start center;
     background: #ff365170;
+
+    @include tablet {
+      grid-area: 1/1/2/4;
+    }
+    @include desktop {
+      grid-area: 1/1/2/4;
+    }
   }
 
   #skills-img {
-    @include sticky(0);
-    z-index: 1;
-    background: #ff3651;
+    grid-area: 1/1/7/7;
     width: 100%;
-    grid-area: 1/1/4/5;
+    background: #ff3651;
     img {
       width: 100%;
+    }
+
+    @include tablet {
+      z-index: 1;
+      @include sticky(0);
+      grid-area: 1/1/4/5;
+    }
+    @include desktop {
+      z-index: 1;
+      @include sticky(0);
+      grid-area: 1/1/4/5;
     }
   }
 
   #skills-summary {
-    grid-area: 1/5/7/7;
+    grid-area: 2/1/7/7;
     background: white;
   }
 

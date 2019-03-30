@@ -18,7 +18,7 @@
     margin: 0;
     margin-left: 0.3em;
     color: #801b29;
-    font-size: 2.5em;
+    @include responsive-font(3vw, 18px, 35px);
     font-family: "Righteous", cursive;
     align-self: flex-end;
   }
@@ -31,6 +31,6 @@
     align-items: flex-end;
     justify-content: space-evenly;
     color: #801b29;
-    font-size: 2em;
+    @include responsive-font(3vw, 18px, 35px);
   }
 }
