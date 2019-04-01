@@ -22,8 +22,13 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  @include responsive-font(3vw, 18px, 35px);
+  // @include responsive-font(3vw, 18px, 35px);
   font-family: "Righteous", cursive;
+
+  h3 {
+    z-index: 1;
+    margin: 0.5em;
+  }
 }
 
 %block {
@@ -31,14 +36,19 @@
   align-items: center;
   justify-content: space-between;
   font-family: "Josefin Sans", sans-serif;
+  h4 {
+    z-index: 1;
+  }
 }
 
 %graph-bar {
+  z-index: 3;
   display: flex;
   align-items: center;
   height: 2em;
   border-bottom-right-radius: 0.5em;
   border-top-right-radius: 0.5em;
+  color: black;
   background: #ff3651;
   box-shadow: -7px 11px 5px -4px rgba(0, 0, 0, 0.75);
 }

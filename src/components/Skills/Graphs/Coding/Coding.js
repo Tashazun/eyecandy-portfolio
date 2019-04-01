@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import withIntersectionObserver from "../../../withIntersectionObserver";
+import withIntersectionObserver from "../../../../withIntersectionObserver";
 
 import "./Coding.scss";
 

@@ -67,6 +67,7 @@
 
     #intro {
       @include sticky(10px);
+      max-width: 40px;
       grid-area: 1/5/3/6;
       place-self: start end;
       display: flex;

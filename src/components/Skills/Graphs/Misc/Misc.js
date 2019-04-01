@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-import withIntersectionObserver from "../../../withIntersectionObserver";
+import withIntersectionObserver from "../../../../withIntersectionObserver";
+import PropTypes from "prop-types";
 
 import "./Misc.scss";
 
 class Misc extends Component {
+  static propTypes = {
+    isVisible: PropTypes.boolean.isRequired
+  };
+
   render() {
     const slide = `${this.props.isVisible ? "slide-in" : ""}`;
     const visibility = `${this.props.isVisible ? "visible" : "transparent"}`;

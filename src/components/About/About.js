@@ -35,9 +35,9 @@ class About extends Component {
               interactive, front-end experiences.
             </p>
             <p>
-              She&aposs an unapologetic artist and full-stack Javascript
-              developer who uses her knowledge of front and back-end to make
-              some really cool stuff.
+              She's an unapologetic artist and full-stack Javascript developer
+              who uses her knowledge of front and back-end to make some really,
+              really cool stuff.
             </p>
             <p>
               When away from the computer, or a sketch book, she can often be

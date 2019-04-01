@@ -4,11 +4,11 @@
   @include layout(200vh, repeat(6, 1fr), repeat(6, 1fr));
 
   h1 {
-    z-index: 1;
+    z-index: 2;
     grid-area: 1/1/2/7;
     border-radius: 5px;
     font-family: "Righteous", cursive;
-    font-size: 2.5em;
+    @include responsive-font(4vw, 30px, 45px);
     place-self: start center;
     background: #ff365170;
 
@@ -43,6 +43,13 @@
   #skills-summary {
     grid-area: 2/1/7/7;
     background: white;
+
+    @include tablet {
+      grid-area: 1/5/7/7;
+    }
+    @include desktop {
+      grid-area: 1/5/7/7;
+    }
   }
 
   #skills {

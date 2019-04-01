@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import doggo from "../../assets/doggo.svg";
 import "./Skills.scss";
-import Design from "./Graphs/Design";
-import Coding from "./Graphs/Coding";
-import Misc from "./Graphs/Misc";
+import Design from "./Graphs/Design/Design";
+import Coding from "./Graphs/Coding/Coding";
+import Misc from "./Graphs/Misc/Misc";
 
 class Skills extends Component {
   render() {
