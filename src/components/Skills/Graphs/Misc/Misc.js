@@ -6,7 +6,7 @@ import "./Misc.scss";
 
 class Misc extends Component {
   static propTypes = {
-    isVisible: PropTypes.boolean.isRequired
+    isVisible: PropTypes.bool.isRequired
   };
 
   render() {

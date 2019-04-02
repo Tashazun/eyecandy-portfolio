@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import withIntersectionObserver from "../../../../withIntersectionObserver";
+import PropTypes from "prop-types";
 
 import "./Coding.scss";
 
 class Coding extends Component {
+  static propTypes = {
+    isVisible: PropTypes.bool.isRequired
+  };
+
   render() {
     const slide = `${this.props.isVisible ? "slide-in" : ""}`;
     const visibility = `${this.props.isVisible ? "visible" : "transparent"}`;

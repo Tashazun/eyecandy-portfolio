@@ -19,13 +19,14 @@
   }
 
   .about-info {
+    z-index: 2;
     margin-left: 1em;
     grid-area: 1/1/2/7;
     place-self: end center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: transform 1.5s ease-out;
+    transition: all 1.5s ease-out;
 
     @include tablet {
       grid-area: 1/1/3/3;
@@ -35,11 +36,12 @@
     }
   }
 
-  #about-summary {
+  .about-summary {
     margin-left: 1em;
     grid-area: 2/1/6/7;
     color: white;
     font-family: "Monda", sans-serif;
+    transition: all 1.5s ease-out;
 
     @include tablet {
       grid-area: 4/1/7/3;
@@ -82,11 +84,13 @@
   }
 
   .hidden-left {
-    transform: translateX(-50em);
+    transform: translateX(-10em);
+    opacity: 0;
   }
 
   .visible-left {
     transform: translateX(0);
+    opacity: 100%;
   }
 
   .hidden-right {
