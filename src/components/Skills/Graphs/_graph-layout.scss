@@ -1,28 +1,42 @@
 @import "../../reuseable";
 
-@mixin bar($width, $transform, $transition) {
+@mixin bar($color, $width, $transform, $transition) {
   display: flex;
   align-items: center;
   height: 2em;
+  background: $color;
   border-bottom-right-radius: 0.5em;
   border-top-right-radius: 0.5em;
-  background: #ff3651;
   box-shadow: -7px 11px 5px -4px rgba(0, 0, 0, 0.75);
   width: $width;
   transform: translateX($transform);
   transition: transform 1s ease-out $transition;
+
+  @include tablet {
+    background: $pink;
+  }
+  @include desktop {
+    background: $pink;
+  }
 }
 
 %layout {
-  height: 65vh;
+  height: 50vh;
   width: 80%;
+
+  @include tablet {
+    height: 65vh;
+  }
+  @include desktop {
+    height: 65vh;
+  }
 }
 
 %title {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  // @include responsive-font(3vw, 18px, 35px);
+  @include responsive-font(3vw, 18px, 35px);
   font-family: "Righteous", cursive;
 
   h3 {
@@ -38,6 +52,13 @@
   font-family: "Josefin Sans", sans-serif;
   h4 {
     z-index: 1;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+
+    @include tablet {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
   }
 }
 

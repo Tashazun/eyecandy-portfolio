@@ -31,7 +31,7 @@
     h3 {
       @extend %project-name;
       left: 25%;
-      color: #3f1b80;
+      color: $purple;
     }
   }
 
@@ -44,7 +44,7 @@
     h3 {
       @extend %project-name;
       left: 15%;
-      color: #1b8072;
+      color: $blue;
     }
   }
 
@@ -57,7 +57,7 @@
     h3 {
       @extend %project-name;
       left: 25%;
-      color: #5c801b;
+      color: $green;
     }
   }
 
@@ -70,7 +70,7 @@
     h3 {
       @extend %project-name;
       left: 15%;
-      color: #801b29;
+      color: $dark-pink;
     }
   }
 

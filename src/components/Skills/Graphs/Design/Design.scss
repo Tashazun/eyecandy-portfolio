@@ -13,16 +13,16 @@
   }
 
   .graph-bar1 {
-    @include bar(25%, -10em, 0.5s);
+    @include bar($purple, 25%, -10em, 0.5s);
   }
   .graph-bar2 {
-    @include bar(25%, -10em, 0.8s);
+    @include bar($purple, 25%, -10em, 0.8s);
   }
   .graph-bar3 {
-    @include bar(45%, -12em, 1s);
+    @include bar($purple, 45%, -12em, 1s);
   }
   .graph-bar4 {
-    @include bar(10%, -12em, 1s);
+    @include bar($purple, 10%, -12em, 1s);
   }
 
   .slide-in {
