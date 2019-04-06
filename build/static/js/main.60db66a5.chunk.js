@@ -10,6 +10,7 @@
     ,
     ,
     ,
+    function(e, t, a) {},
     ,
     ,
     function(e, t, a) {
@@ -28,7 +29,7 @@
       e.exports = a.p + "static/media/rainbow-xylophone.05db804d.png";
     },
     function(e, t, a) {
-      e.exports = a.p + "static/media/doggo.ed9f60dc.svg";
+      e.exports = a.p + "static/media/doggo.b478812c.svg";
     },
     function(e, t, a) {
       e.exports = a.p + "static/media/PoppiesSimpleWhite.48d85dab.svg";
@@ -61,39 +62,171 @@
     function(e, t, a) {},
     function(e, t, a) {},
     function(e, t, a) {},
-    function(e, t, a) {},
     function(e, t, a) {
       "use strict";
       a.r(t);
       var n = a(0),
         c = a.n(n),
-        l = a(6),
-        r = a.n(l),
-        i = (a(26), a(1)),
+        r = a(6),
+        l = a.n(r),
+        i = (a(27), a(1)),
         o = a(2),
         s = a(4),
         m = a(3),
-        d = a(5),
-        u = (a(27), a(28), a(7)),
-        h = (a(34), a(11)),
-        p = a.n(h),
-        E = (function(e) {
+        u = a(5),
+        h = (a(28), a(29), a(7)),
+        d = (a(9),
+        function(e) {
+          return function(t) {
+            var a,
+              r,
+              l = t.displayName || t.name || "Component";
+            return (
+              (r = a = (function(a) {
+                function n() {
+                  var t, a;
+                  Object(i.a)(this, n);
+                  for (
+                    var c = arguments.length, r = new Array(c), l = 0;
+                    l < c;
+                    l++
+                  )
+                    r[l] = arguments[l];
+                  return (
+                    ((a = Object(s.a)(
+                      this,
+                      (t = Object(m.a)(n)).call.apply(t, [this].concat(r))
+                    )).state = { isIntersecting: !1 }),
+                    (a.handleChange = function(t) {
+                      var n = t.isIntersecting,
+                        c = t.intersectionRatio;
+                      a.setState({ isIntersecting: n && c >= e });
+                    }),
+                    a
+                  );
+                }
+                return (
+                  Object(u.a)(n, a),
+                  Object(o.a)(n, [
+                    {
+                      key: "render",
+                      value: function() {
+                        return c.a.createElement(
+                          h.a,
+                          { onChange: this.handleChange, threshold: e },
+                          c.a.createElement(
+                            t,
+                            Object.assign({}, this.props, {
+                              isVisible: this.state.isIntersecting
+                            })
+                          )
+                        );
+                      }
+                    }
+                  ]),
+                  n
+                );
+              })(n.Component)),
+              (a.displayName = "withIntersectionObserver(".concat(l, ")")),
+              r
+            );
+          };
+        }),
+        p = (function(e) {
+          function t() {
+            return (
+              Object(i.a)(this, t),
+              Object(s.a)(this, Object(m.a)(t).apply(this, arguments))
+            );
+          }
+          return (
+            Object(u.a)(t, e),
+            Object(o.a)(t, [
+              {
+                key: "render",
+                value: function() {
+                  var e = "".concat(
+                    this.props.isVisible ? "visible-left" : "hidden-left"
+                  );
+                  return c.a.createElement(
+                    "div",
+                    { className: "about-info ".concat(e) },
+                    c.a.createElement(
+                      "h2",
+                      { id: "about-block1" },
+                      "01 // Who is this ",
+                      c.a.createElement("span", null, "wunderkind?")
+                    ),
+                    c.a.createElement(
+                      "h2",
+                      { id: "about-block2" },
+                      "She\u2019s a child of the Portland streets..."
+                    )
+                  );
+                }
+              }
+            ]),
+            t
+          );
+        })(n.Component),
+        E = d(0.15)(p),
+        b = (function(e) {
+          function t() {
+            return (
+              Object(i.a)(this, t),
+              Object(s.a)(this, Object(m.a)(t).apply(this, arguments))
+            );
+          }
+          return (
+            Object(u.a)(t, e),
+            Object(o.a)(t, [
+              {
+                key: "render",
+                value: function() {
+                  var e = "".concat(
+                    this.props.isVisible ? "visible-left" : "hidden-left"
+                  );
+                  return c.a.createElement(
+                    "div",
+                    { className: "about-summary ".concat(e) },
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "An enthusiastic professional who strives to make thrilling, interactive, front-end experiences."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "She's an unapologetic artist, and full-stack Javascript developer, who uses her knowledge of front and back-end to make cool stuff."
+                    ),
+                    c.a.createElement(
+                      "p",
+                      null,
+                      "When away from the computer, or a sketch book, she can often be found practising with her longsword and taking her dog (worlds goodest boy) out for long hikes."
+                    )
+                  );
+                }
+              }
+            ]),
+            t
+          );
+        })(n.Component),
+        g = d(0.15)(b),
+        v = a(12),
+        f = a.n(v),
+        j = (function(e) {
           function t() {
             var e, a;
             Object(i.a)(this, t);
-            for (var n = arguments.length, c = new Array(n), l = 0; l < n; l++)
-              c[l] = arguments[l];
+            for (var n = arguments.length, c = new Array(n), r = 0; r < n; r++)
+              c[r] = arguments[r];
             return (
               ((a = Object(s.a)(
                 this,
                 (e = Object(m.a)(t)).call.apply(e, [this].concat(c))
-              )).state = {
-                enterLeft: "hidden-left",
-                enterRight: "hidden-right"
-              }),
+              )).state = { enterRight: "hidden-right" }),
               (a.handleChange = function(e) {
                 a.setState({
-                  enterLeft: e.isIntersecting ? "visible-left" : "hidden-left",
                   enterRight: e.isIntersecting
                     ? "visible-right"
                     : "hidden-right"
@@ -103,64 +236,31 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
                 value: function() {
                   return c.a.createElement(
-                    u.a,
+                    h.a,
                     { onChange: this.handleChange, threshold: 0.25 },
                     c.a.createElement(
                       "div",
                       { id: "about-container" },
-                      c.a.createElement(
-                        "div",
-                        {
-                          className: "about-info ".concat(this.state.enterLeft)
-                        },
-                        c.a.createElement(
-                          "h2",
-                          { id: "about-block1" },
-                          "01 // Who is this ",
-                          c.a.createElement("span", null, "wunderkind?")
-                        ),
-                        c.a.createElement(
-                          "h2",
-                          { id: "about-block2" },
-                          "She\u2019s a child of the Portland streets..."
-                        )
-                      ),
-                      c.a.createElement(
-                        "div",
-                        { id: "about-summary" },
-                        c.a.createElement(
-                          "p",
-                          null,
-                          "An enthusiastic professional who strives to make thrilling, interactive, front-end experiences."
-                        ),
-                        c.a.createElement(
-                          "p",
-                          null,
-                          "She&aposs an unapologetic artist and full-stack Javascript developer who uses her knowledge of front and back-end to make some really cool stuff."
-                        ),
-                        c.a.createElement(
-                          "p",
-                          null,
-                          "When away from the computer, or a sketch book, she can often be found practising with her longsword and taking her dog( worlds goodest boy) out for long hikes."
-                        )
-                      ),
+                      c.a.createElement(E, null),
+                      c.a.createElement(g, null),
+                      c.a.createElement("div", { id: "white" }),
+                      c.a.createElement("img", {
+                        id: "fairy",
+                        className: "".concat(this.state.enterRight),
+                        src: f.a,
+                        alt: "Tasha Zuniga"
+                      }),
                       c.a.createElement(
                         "div",
                         { id: "profile" },
                         c.a.createElement("h3", null, "Profile")
-                      ),
-                      c.a.createElement("div", { id: "white" }),
-                      c.a.createElement("img", {
-                        className: "".concat(this.state.enterRight),
-                        src: p.a,
-                        alt: "Tasha Zuniga"
-                      })
+                      )
                     )
                   );
                 }
@@ -169,15 +269,15 @@
             t
           );
         })(n.Component),
-        b = (a(35), a(12)),
-        g = a.n(b),
-        v = a(13),
-        f = a.n(v),
-        k = a(14),
-        j = a.n(k),
-        O = a(15),
-        y = a.n(O),
-        N = (function(e) {
+        k = (a(35), a(13)),
+        O = a.n(k),
+        y = a(14),
+        N = a.n(y),
+        w = a(15),
+        C = a.n(w),
+        x = a(16),
+        R = a.n(x),
+        I = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -185,7 +285,7 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
@@ -207,7 +307,7 @@
                         { className: "project-block" },
                         c.a.createElement("h4", null, "Food Truck Tracker"),
                         c.a.createElement("img", {
-                          src: g.a,
+                          src: O.a,
                           alt: "food cart burrito"
                         }),
                         c.a.createElement("h4", null, "React")
@@ -227,7 +327,7 @@
                         { className: "project-block" },
                         c.a.createElement("h4", null, "Video Business Reviews"),
                         c.a.createElement("img", {
-                          src: f.a,
+                          src: N.a,
                           alt: "gold star"
                         }),
                         c.a.createElement("h4", null, "React + Firebase")
@@ -250,7 +350,7 @@
                           "Cute, Colorful Music Maker"
                         ),
                         c.a.createElement("img", {
-                          src: y.a,
+                          src: R.a,
                           alt: "rainbow xylophone"
                         }),
                         c.a.createElement("h4", null, "Pure Javascript")
@@ -269,7 +369,7 @@
                         { className: "project-block" },
                         c.a.createElement("h4", null, "Technical Film Reviews"),
                         c.a.createElement("img", {
-                          src: j.a,
+                          src: C.a,
                           alt: "film reel"
                         }),
                         c.a.createElement(
@@ -291,66 +391,10 @@
             t
           );
         })(n.Component),
-        w = a(16),
-        C = a.n(w),
-        x = (a(36),
-        function(e) {
-          return function(t) {
-            var a,
-              l,
-              r = t.displayName || t.name || "Component";
-            return (
-              (l = a = (function(a) {
-                function n() {
-                  var t, a;
-                  Object(i.a)(this, n);
-                  for (
-                    var c = arguments.length, l = new Array(c), r = 0;
-                    r < c;
-                    r++
-                  )
-                    l[r] = arguments[r];
-                  return (
-                    ((a = Object(s.a)(
-                      this,
-                      (t = Object(m.a)(n)).call.apply(t, [this].concat(l))
-                    )).state = { isIntersecting: !1 }),
-                    (a.handleChange = function(t) {
-                      var n = t.isIntersecting,
-                        c = t.intersectionRatio;
-                      a.setState({ isIntersecting: n && c >= e });
-                    }),
-                    a
-                  );
-                }
-                return (
-                  Object(d.a)(n, a),
-                  Object(o.a)(n, [
-                    {
-                      key: "render",
-                      value: function() {
-                        return c.a.createElement(
-                          u.a,
-                          { onChange: this.handleChange, threshold: e },
-                          c.a.createElement(
-                            t,
-                            Object.assign({}, this.props, {
-                              isVisible: this.state.isIntersecting
-                            })
-                          )
-                        );
-                      }
-                    }
-                  ]),
-                  n
-                );
-              })(n.Component)),
-              (a.displayName = "withIntersectionObserver(".concat(r, ")")),
-              l
-            );
-          };
-        }),
-        R = (a(37),
+        V = a(17),
+        D = a.n(V),
+        S = (a(36),
+        a(37),
         (function(e) {
           function t() {
             return (
@@ -359,7 +403,7 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
@@ -428,8 +472,8 @@
             t
           );
         })(n.Component)),
-        I = x(0.7)(R),
-        D = (a(38),
+        M = d(0.7)(S),
+        A = (a(38),
         (function(e) {
           function t() {
             return (
@@ -438,7 +482,7 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
@@ -507,8 +551,8 @@
             t
           );
         })(n.Component)),
-        S = x(0.7)(D),
-        M = (a(39),
+        B = d(0.7)(A),
+        J = (a(39),
         (function(e) {
           function t() {
             return (
@@ -517,7 +561,7 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
@@ -591,8 +635,8 @@
             t
           );
         })(n.Component)),
-        V = x(0.7)(M),
-        A = (function(e) {
+        P = d(0.7)(J),
+        T = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -600,7 +644,7 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
@@ -608,18 +652,18 @@
                   return c.a.createElement(
                     "div",
                     { id: "skills-container" },
-                    c.a.createElement(
-                      "div",
-                      { id: "skills-img" },
-                      c.a.createElement("img", { src: C.a, alt: "cute doggo" })
-                    ),
                     c.a.createElement("h1", null, "03 \\\\ What can she do?"),
                     c.a.createElement(
                       "div",
                       { id: "skills-summary" },
-                      c.a.createElement(I, null),
-                      c.a.createElement(S, null),
-                      c.a.createElement(V, null)
+                      c.a.createElement(M, null),
+                      c.a.createElement(B, null),
+                      c.a.createElement(P, null)
+                    ),
+                    c.a.createElement(
+                      "div",
+                      { id: "skills-img" },
+                      c.a.createElement("img", { src: D.a, alt: "cute doggo" })
                     ),
                     c.a.createElement(
                       "div",
@@ -639,15 +683,15 @@
             t
           );
         })(n.Component),
-        B = a(9),
-        J = a.n(B),
-        P = (a(40), a(17)),
-        W = a.n(P),
-        T = a(18),
-        F = a.n(T),
-        L = a(19),
-        Z = a.n(L),
-        z = (function(e) {
+        W = a(10),
+        z = a.n(W),
+        F = (a(40), a(18)),
+        Z = a.n(F),
+        G = a(19),
+        X = a.n(G),
+        H = a(20),
+        L = a.n(H),
+        U = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -655,22 +699,22 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "componentDidMount",
                 value: function() {
-                  new J.a("white", {
+                  new z.a("white", {
                     type: "oneByOne",
                     start: "autostart",
-                    duration: 45e3,
-                    file: W.a
+                    duration: 3e4,
+                    file: Z.a
                   }),
-                    new J.a("black", {
+                    new z.a("black", {
                       type: "oneByOne",
                       start: "autostart",
-                      duration: 45e3,
-                      file: F.a
+                      duration: 3e4,
+                      file: X.a
                     });
                 }
               },
@@ -685,7 +729,7 @@
                       { id: "top-layer" },
                       c.a.createElement("img", {
                         id: "logo",
-                        src: Z.a,
+                        src: L.a,
                         alt: "Mayan glyph that spells Zuniga"
                       }),
                       c.a.createElement("h2", null, "Tasha Zuniga"),
@@ -719,8 +763,8 @@
             t
           );
         })(n.Component),
-        G = a(8),
-        X = (function(e) {
+        Y = a(8),
+        $ = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -728,7 +772,7 @@
             );
           }
           return (
-            Object(d.a)(t, e),
+            Object(u.a)(t, e),
             Object(o.a)(t, [
               {
                 key: "render",
@@ -736,10 +780,10 @@
                   return c.a.createElement(
                     "div",
                     { className: "App-container" },
-                    c.a.createElement(z, null),
-                    c.a.createElement(E, null),
-                    c.a.createElement(N, null),
-                    c.a.createElement(A, null),
+                    c.a.createElement(U, null),
+                    c.a.createElement(j, null),
+                    c.a.createElement(I, null),
+                    c.a.createElement(T, null),
                     c.a.createElement(
                       "footer",
                       { className: "App-footer" },
@@ -747,9 +791,27 @@
                       c.a.createElement(
                         "div",
                         null,
-                        c.a.createElement(G.a, null),
-                        c.a.createElement(G.b, null),
-                        c.a.createElement(G.c, null)
+                        c.a.createElement(
+                          "a",
+                          { id: "github", href: "https://github.com/Tashazun" },
+                          c.a.createElement(Y.a, null)
+                        ),
+                        c.a.createElement(
+                          "a",
+                          {
+                            id: "linkedin",
+                            href: "https://linkedin.com/in/tashazuniga/"
+                          },
+                          c.a.createElement(Y.b, { id: "linkedin" })
+                        ),
+                        c.a.createElement(
+                          "a",
+                          {
+                            id: "twitter",
+                            href: "https://twitter.com/artofobscura"
+                          },
+                          c.a.createElement(Y.c, null)
+                        )
                       )
                     )
                   );
@@ -766,13 +828,13 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      r.a.render(c.a.createElement(X, null), document.getElementById("root")),
+      l.a.render(c.a.createElement($, null), document.getElementById("root")),
         "serviceWorker" in navigator &&
           navigator.serviceWorker.ready.then(function(e) {
             e.unregister();
           });
     }
   ],
-  [[20, 1, 2]]
+  [[21, 1, 2]]
 ]);
-//# sourceMappingURL=main.df1d0f58.chunk.js.map
+//# sourceMappingURL=main.60db66a5.chunk.js.map
