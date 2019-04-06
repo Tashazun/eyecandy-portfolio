@@ -14,9 +14,11 @@
 
   @include tablet {
     background: $pink;
+    height: 3em;
   }
   @include desktop {
     background: $pink;
+    height: 3.5em;
   }
 }
 
@@ -59,19 +61,11 @@
       margin-top: 1em;
       margin-bottom: 1em;
     }
+    @include desktop {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
   }
-}
-
-%graph-bar {
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  height: 2em;
-  border-bottom-right-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-  color: black;
-  background: #ff3651;
-  box-shadow: -7px 11px 5px -4px rgba(0, 0, 0, 0.75);
 }
 
 .visible {

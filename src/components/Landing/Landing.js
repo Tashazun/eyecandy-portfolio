@@ -12,14 +12,14 @@ class Landing extends Component {
     new Vivus("white", {
       type: "oneByOne",
       start: "autostart",
-      duration: 45000,
+      duration: 30000,
       file: Poppies
     });
 
     new Vivus("black", {
       type: "oneByOne",
       start: "autostart",
-      duration: 45000,
+      duration: 30000,
       file: PoppiesBlack
     });
   }

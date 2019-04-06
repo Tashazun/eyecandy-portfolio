@@ -27,6 +27,7 @@ class About extends Component {
           <Summary />
           <div id="white" />
           <img
+            id="fairy"
             className={`${this.state.enterRight}`}
             src={profile}
             alt="Tasha Zuniga"

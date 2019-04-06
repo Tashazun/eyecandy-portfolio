@@ -58,7 +58,6 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    color: #801b29;
     @include responsive-font(3vw, 18px, 35px);
 
     @include tablet {
@@ -66,6 +65,10 @@
     }
     @include desktop {
       width: 25%;
+    }
+
+    a {
+      color: $dark-pink;
     }
   }
 }
