@@ -192,12 +192,12 @@
                     c.a.createElement(
                       "p",
                       null,
-                      "An enthusiastic professional who strives to make thrilling, interactive, front-end experiences."
+                      "An enthusiastic professional who strives to make thrilling, interactive, UI experiences."
                     ),
                     c.a.createElement(
                       "p",
                       null,
-                      "She's an unapologetic artist, and full-stack Javascript developer, who uses her knowledge of front and back-end to make cool stuff."
+                      "She's an unapologetic artist, and Front-end Developer with a passion for inclusive design."
                     ),
                     c.a.createElement(
                       "p",
@@ -277,7 +277,7 @@
         C = a.n(w),
         x = a(16),
         R = a.n(x),
-        I = (function(e) {
+        D = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -391,8 +391,8 @@
             t
           );
         })(n.Component),
-        V = a(17),
-        D = a.n(V),
+        I = a(17),
+        V = a.n(I),
         S = (a(36),
         a(37),
         (function(e) {
@@ -552,7 +552,7 @@
           );
         })(n.Component)),
         B = d(0.7)(A),
-        J = (a(39),
+        P = (a(39),
         (function(e) {
           function t() {
             return (
@@ -635,8 +635,8 @@
             t
           );
         })(n.Component)),
-        P = d(0.7)(J),
-        T = (function(e) {
+        T = d(0.7)(P),
+        W = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -658,12 +658,12 @@
                       { id: "skills-summary" },
                       c.a.createElement(M, null),
                       c.a.createElement(B, null),
-                      c.a.createElement(P, null)
+                      c.a.createElement(T, null)
                     ),
                     c.a.createElement(
                       "div",
                       { id: "skills-img" },
-                      c.a.createElement("img", { src: D.a, alt: "cute doggo" })
+                      c.a.createElement("img", { src: V.a, alt: "cute doggo" })
                     ),
                     c.a.createElement(
                       "div",
@@ -683,15 +683,15 @@
             t
           );
         })(n.Component),
-        W = a(10),
-        z = a.n(W),
-        F = (a(40), a(18)),
-        Z = a.n(F),
+        J = a(10),
+        F = a.n(J),
+        z = (a(40), a(18)),
+        Z = a.n(z),
         G = a(19),
-        X = a.n(G),
-        H = a(20),
-        L = a.n(H),
-        U = (function(e) {
+        U = a.n(G),
+        X = a(20),
+        H = a.n(X),
+        L = (function(e) {
           function t() {
             return (
               Object(i.a)(this, t),
@@ -704,17 +704,17 @@
               {
                 key: "componentDidMount",
                 value: function() {
-                  new z.a("white", {
+                  new F.a("white", {
                     type: "oneByOne",
                     start: "autostart",
                     duration: 3e4,
                     file: Z.a
                   }),
-                    new z.a("black", {
+                    new F.a("black", {
                       type: "oneByOne",
                       start: "autostart",
                       duration: 3e4,
-                      file: X.a
+                      file: U.a
                     });
                 }
               },
@@ -729,7 +729,7 @@
                       { id: "top-layer" },
                       c.a.createElement("img", {
                         id: "logo",
-                        src: L.a,
+                        src: H.a,
                         alt: "Mayan glyph that spells Zuniga"
                       }),
                       c.a.createElement("h2", null, "Tasha Zuniga"),
@@ -742,11 +742,7 @@
                       c.a.createElement(
                         "div",
                         { id: "intro" },
-                        c.a.createElement(
-                          "h3",
-                          null,
-                          "Illustrator / Developer"
-                        ),
+                        c.a.createElement("h3", null, "Designer / Developer"),
                         c.a.createElement(
                           "div",
                           { id: "arrow-container" },
@@ -780,10 +776,10 @@
                   return c.a.createElement(
                     "div",
                     { className: "App-container" },
-                    c.a.createElement(U, null),
+                    c.a.createElement(L, null),
                     c.a.createElement(j, null),
-                    c.a.createElement(I, null),
-                    c.a.createElement(T, null),
+                    c.a.createElement(D, null),
+                    c.a.createElement(W, null),
                     c.a.createElement(
                       "footer",
                       { className: "App-footer" },
@@ -837,4 +833,4 @@
   ],
   [[21, 1, 2]]
 ]);
-//# sourceMappingURL=main.60db66a5.chunk.js.map
+//# sourceMappingURL=main.13b59008.chunk.js.map
