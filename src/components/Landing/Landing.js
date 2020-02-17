@@ -35,7 +35,7 @@ class Landing extends Component {
         </div>
         <div id="bottom-layer">
           <div id="intro">
-            <h3>Illustrator / Developer</h3>
+            <h3>Designer / Developer</h3>
             <div id="arrow-container">
               <div id="arrow-tail" />
               <div id="arrow-down" />

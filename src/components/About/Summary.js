@@ -16,12 +16,11 @@ class Summary extends Component {
       <div className={`about-summary ${slide}`}>
         <p>
           An enthusiastic professional who strives to make thrilling,
-          interactive, front-end experiences.
+          interactive, UI experiences.
         </p>
         <p>
-          She&apos;s an unapologetic artist, and full-stack Javascript
-          developer, who uses her knowledge of front and back-end to make cool
-          stuff.
+          She&apos;s an unapologetic artist, and Front-end Developer with a
+          passion for inclusive design.
         </p>
         <p>
           When away from the computer, or a sketch book, she can often be found
