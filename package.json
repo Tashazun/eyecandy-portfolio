@@ -14,7 +14,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-icons": "^3.4.0",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^5.0.1",
     "typescript": "^3.3.4000",
     "vivus": "^0.4.4"
   },
